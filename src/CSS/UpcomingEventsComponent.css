@@ -1,0 +1,71 @@
+.events-container {
+    padding: 50px;
+    /* background-color: #fff; */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin: 20px 0;
+}
+
+.events-container h2{
+    text-align: center;
+    color: rgba(255, 0, 43,0.7);
+    font-size: 2rem;
+}
+
+.event-card {
+    /* background-color: #f0f8ff; */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+}
+
+.event-card img{
+    width:100%;
+}
+
+.event-card h3 {
+    margin: 10px 0;
+    color: rgba(128, 0, 128, 0.7);
+}
+
+.event-card p{
+    color: purple;
+}
+
+.events-containerButtonWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.events-containerButtonWrap button {
+    padding: 10px;
+    background-color: rgba(255, 0, 43, 0.7);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.events-containerButtonWrap button:hover {
+    background-color: rgba(255, 0, 43, 0.9);
+}
+
+
+@media screen and (max-width:428px) {
+    .events-container{
+        padding: 10px;
+    }   
+}
+
+@media screen and (max-width:320px) {
+  .events-container h2{
+    font-size: 1.8rem;
+  }  
+}

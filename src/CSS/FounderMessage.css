@@ -1,0 +1,33 @@
+.FounderMessageWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* padding: 50px; */
+}
+
+.FounderMessageWrap p{
+    width: 50%;
+    padding: 5%;
+    color:purple;
+    font-size: 1.2rem;
+    
+}
+
+.FounderMessageWrap img{
+    width: 50%;
+}
+
+@media screen and (max-width:768px) {
+    .FounderMessageWrap{
+        flex-direction: column-reverse;
+    }
+
+    .FounderMessageWrap p{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .FounderMessageWrap img{
+        width: 100%;
+    }
+}

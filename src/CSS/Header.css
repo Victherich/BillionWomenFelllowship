@@ -1,0 +1,151 @@
+
+
+.Header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2px 0px;
+    height: auto;
+    background:linear-gradient(to bottom, #F40269, #810065 );
+    /* background:linear-gradient(to bottom, #F40269,#F40269 ); */
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.HeaderImg{
+    width: 5%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.HeaderLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 750px; */
+    gap: 50px;
+    height: auto;
+
+}
+
+.HeaderLeft a, .HeaderLeft p{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.HeaderLeft h1{
+    color: rgba(57, 57, 119, 0.9);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.HeaderRight{
+    /* width: 250px; */
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.HeaderRight button{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.HeaderRight button:hover{
+    background-color: rgba(255, 255, 255, 0.555);
+    color: rgba(0, 0, 255, 0.712);
+}
+
+.CartWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.Menu2{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to bottom, #F40269, #810065 );
+    padding: 20px 20px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.Menu2 a, .Menu2 p{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 5px 20px;
+    /* background-color: green; */
+    border-radius: 10px;
+    
+}
+
+.Burger{
+    display: none;
+}
+
+@media screen and (max-width:884px) {
+    .Header{
+        padding: 10px 10px;
+    }
+    .HeaderLeft{
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .Burger{
+        display: flex;
+    }
+    .HeaderLeft{
+        display: none;
+    }
+    .Header{
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .HeaderImg{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .HeaderRight button{
+        padding: 5px 10px;
+    }   
+
+    .HeaderRight{
+        width: 200px;
+    }
+}
