@@ -63,7 +63,7 @@ const scrollToAbout = ()=>{
         <NavLink to={"/about"}> ABOUT</NavLink>
         {/* <NavLink to={"/activities"}> ACTIVITIES</NavLink> */}
         <NavLink to={"/events"}>EVENTS</NavLink>
-        <NavLink to={"/testimonies"}> TESTIMONIES</NavLink>
+        <NavLink to={"/testimoniespage"}> TESTIMONIES</NavLink>
         <NavLink to={"/getinspiredpage"}> GET INSPIRED</NavLink>
         <NavLink to={"/galleriespage"}> GALLERY</NavLink>
         <NavLink to="/contact">CONTACT</NavLink>
@@ -78,9 +78,9 @@ const scrollToAbout = ()=>{
         {menuSwitch&&<div className='Menu2 animate__animated animate__slideInRight' ref={menuRef}>
         <NavLink to={"/"} onClick={()=>setMenuSwitch(false)}> HOME</NavLink>
         <NavLink to={"/about"} onClick={()=>setMenuSwitch(false)}> ABOUT</NavLink>
-        <NavLink to={"/activities"} onClick={()=>setMenuSwitch(false)}>ACTIVITIES</NavLink>
+        {/* <NavLink to={"/activities"} onClick={()=>setMenuSwitch(false)}>ACTIVITIES</NavLink> */}
         <NavLink to={"/events"} onClick={()=>setMenuSwitch(false)}>EVENTS</NavLink>
-        <NavLink to={"/testimonies"} onClick={()=>setMenuSwitch(false)}>TESTIMONIES</NavLink>
+        <NavLink to={"/testimoniespage"} onClick={()=>setMenuSwitch(false)}>TESTIMONIES</NavLink>
         <NavLink to={"/getinspiredpage"} onClick={()=>setMenuSwitch(false)}>GET INSPIRED</NavLink>
         <NavLink to="/galleriespage" onClick={()=>setMenuSwitch(false)}>GALLERY</NavLink>
         <NavLink to="/contact" onClick={()=>setMenuSwitch(false)}>CONTACT</NavLink>

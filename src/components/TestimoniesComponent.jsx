@@ -1,5 +1,6 @@
 import React from 'react';
 import '../CSS/TestimoniesComponent.css';
+import { useNavigate } from 'react-router-dom';
 
 const testimonies = [
     { id: 1, name: 'Jane Doe', testimony: 'This fellowship has changed my life!' },
@@ -9,6 +10,7 @@ const testimonies = [
 ];
 
 const TestimoniesComponent = () => {
+    const navigate = useNavigate()
     return (
        <div className='TestimoniesWrap'>
              <div className="testimonies-container">
@@ -21,7 +23,7 @@ const TestimoniesComponent = () => {
             ))}
         </div>
         <div className='events-containerButtonWrap'>
-            <button>Read More Testimonies</button>
+            <button onClick={()=>navigate("/testimoniespage")}>Read More Testimonies</button>
             </div>
        </div>
     );

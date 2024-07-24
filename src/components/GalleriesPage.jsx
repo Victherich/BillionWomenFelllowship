@@ -18,6 +18,24 @@ import gpic13 from "../images/gpic13.jpeg";
 import gpic14 from "../images/gpic14.jpeg";
 import gpic15 from "../images/gpic15.jpeg";
 import gpic16 from "../images/gpic16.jpeg";
+import gpic17 from "../images/gpic17.png";
+import gpic18 from "../images/gpic18.png";
+import gpic19 from "../images/gpic19.png";
+import gpic20 from "../images/gpic20.png";
+import gpic21 from "../images/gpic21.png";
+import gpic22 from "../images/gpic22.png";
+import gpic23 from "../images/gpic23.png";
+import gpic24 from "../images/gpic24.png";
+import gpic25 from "../images/gpic25.png";
+import gpic26 from "../images/gpic26.png";
+import gpic27 from "../images/gpic27.png";
+import gpic28 from "../images/gpic28.png";
+import gpic29 from "../images/gpic29.png";
+import gpic30 from "../images/gpic30.png";
+import gpic31 from "../images/gpic31.png";
+import gpic32 from "../images/gpic32.png";
+import gpic33 from "../images/gpic33.png";
+import gpic34 from "../images/gpic34.png";
 
 const galleries = [
     {
@@ -80,6 +98,116 @@ const galleries = [
         title: 'Leadership Training Seminar',
         image: gpic12
     },
+    {
+        id: 13,
+        title: 'Summer Picnic',
+        image: gpic13
+    },
+    {
+        id: 14,
+        title: 'Book Club Meeting',
+        image: gpic14
+    },
+    {
+        id: 15,
+        title: 'Community Service Project',
+        image: gpic15
+    },
+    {
+        id: 16,
+        title: 'Women’s Conference',
+        image: gpic16
+    },
+    {
+        id: 17,
+        title: 'Spiritual Growth Workshop',
+        image: gpic17
+    },
+    {
+        id: 18,
+        title: 'Marriage Enrichment Seminar',
+        image: gpic18
+    },
+    {
+        id: 19,
+        title: 'Health and Fitness Fair',
+        image: gpic19
+    },
+    {
+        id: 20,
+        title: 'Thanksgiving Dinner',
+        image: gpic20
+    },
+    {
+        id: 21,
+        title: 'Easter Egg Hunt',
+        image: gpic21
+    },
+    {
+        id: 22,
+        title: 'Singles Ministry Event',
+        image: gpic22
+    },
+    {
+        id: 23,
+        title: 'Women’s Empowerment Brunch',
+        image: gpic23
+    },
+    {
+        id: 24,
+        title: 'Christmas Pageant',
+        image: gpic24
+    },
+    {
+        id: 25,
+        title: 'Family Fun Day',
+        image: gpic25
+    },
+    {
+        id: 26,
+        title: 'New Year’s Eve Service',
+        image: gpic26
+    },
+    {
+        id: 27,
+        title: 'Back-to-School Bash',
+        image: gpic27
+    },
+    {
+        id: 28,
+        title: 'Father’s Day Celebration',
+        image: gpic28
+    },
+    {
+        id: 29,
+        title: 'Lenten Reflections',
+        image: gpic29
+    },
+    {
+        id: 30,
+        title: 'Art and Craft Workshop',
+        image: gpic30
+    },
+    {
+        id: 31,
+        title: 'Choir Concert',
+        image: gpic31
+    },
+    {
+        id: 32,
+        title: 'Advent Prayer Service',
+        image: gpic32
+    },
+    {
+        id: 33,
+        title: 'Soup Kitchen Volunteer Day',
+        image: gpic33
+    },
+    {
+        id: 34,
+        title: 'Mission Trip',
+        image: gpic34
+    }
 ];
 
 const GalleriesPage = () => {
@@ -88,21 +216,16 @@ const GalleriesPage = () => {
             <div className='GalleryPageHeaderWrap'>
                 <h2>GALLERY</h2>
             </div>
-        <div className="galleries">
-
-            <div className='GalleryPageCardsWrap'>
-                {galleries.map(gallery => (
-                    <div key={gallery.id} className="gallery-card">
-                        <img src={gallery.image} alt={gallery.title} />
-                        <p>{gallery.title}</p>
-                    </div>
-                ))}
+            <div className="galleries">
+                <div className='GalleryPageCardsWrap'>
+                    {galleries.map(gallery => (
+                        <div key={gallery.id} className="gallery-card">
+                            <img src={gallery.image} alt={gallery.title} />
+                            <p>{gallery.title}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
-                {/* <div className='GalleryButtonWrap'>
-                <button className='GalleryButton'>View more</button>
-                </div> */}
-            
-        </div>
         </div>
     );
 };

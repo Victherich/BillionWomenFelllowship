@@ -10,6 +10,7 @@ import ContactForm from './components/ContactUs'
 import GetInspiredPage from './components/GetInspiredPage'
 import GetInspiredDetailPage from './components/GetInspiredDetailPage'
 import GalleriesPage from './components/GalleriesPage'
+import TestimoniesPage from './components/TestimoniesPage'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/getinspiredpage" element={<GetInspiredPage/>}/>
             <Route path="/getinspired/:id" element={<GetInspiredDetailPage/>}/>
             <Route path="/galleriespage" element={<GalleriesPage/>}/>
+            <Route path="/testimoniespage" element={<TestimoniesPage/>}/>
         </Routes>
         <a href="https://wa.me/2348030906974" ><img src={wp} alt="logo" className="WhatsAppIcon" /></a>
     <Footer/>    
