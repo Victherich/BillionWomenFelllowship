@@ -2,9 +2,24 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import '../CSS/GetInspired.css';
 import { Context } from './Context';
+import {FaShareAlt} from "react-icons/fa"
+
 
 const GetInspiredPage = () => {
     const { blogs } = useContext(Context);
+
+    const handleShare = (blog) => {
+        if (navigator.share) {
+          navigator.share({
+            title: blog.title,
+            text: blog.excerpt,
+            url: window.location.origin + '/getinspired/' + blog.id,
+          }).catch(error => console.error('Error sharing', error));
+        } else {
+          navigator.clipboard.writeText(window.location.origin + '/getinspired/' + blog.id);
+          alert("URL copied to clipboard");
+        }
+      };
 
     return (
         <div>
@@ -24,6 +39,9 @@ const GetInspiredPage = () => {
                             <Link to={`/getinspired/${blog.id}`}>
                                 <button>Read More</button>
                             </Link>
+                            <button className='ShareButton' onClick={(e) => { e.stopPropagation(); handleShare(blog); }}>
+                <FaShareAlt />
+              </button>
                         </div>
                     ))}
                 </div>

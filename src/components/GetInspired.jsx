@@ -2,10 +2,24 @@ import React, { useContext } from 'react';
 import '../CSS/GetInspired.css';
 import { Context } from './Context';
 import { useNavigate } from 'react-router-dom';
+import {FaShareAlt} from "react-icons/fa"
 
 const GetInspired = () => {
     const { blogs } = useContext(Context);
     const navigate = useNavigate()
+
+    const handleShare = (blog) => {
+        if (navigator.share) {
+          navigator.share({
+            title: blog.title,
+            text: blog.excerpt,
+            url: window.location.origin + '/getinspired/' + blog.id,
+          }).catch(error => console.error('Error sharing', error));
+        } else {
+          navigator.clipboard.writeText(window.location.origin + '/getinspired/' + blog.id);
+          alert("URL copied to clipboard");
+        }
+      };
 
     return (
         <div className="get-inspired">
@@ -19,10 +33,14 @@ const GetInspired = () => {
                             <p>{blog.excerpt}</p>
                         </div>
                         <button onClick={() => navigate(`/getinspired/${blog.id}`)}>Read More</button>
+                        <button className='ShareButton' onClick={(e) => { e.stopPropagation(); handleShare(blog); }}>
+                <FaShareAlt />
+              </button>
                     </div>
                 ))}
                 <div className='events-containerButtonWrap'>
                     <button onClick={()=>navigate("/getinspiredpage")}>Explore More ...</button>
+                    
                 </div>
             </div>
         </div>

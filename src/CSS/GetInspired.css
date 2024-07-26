@@ -1,7 +1,6 @@
 .get-inspired {
     padding: 80px;
-    background-color: rgba(255, 192, 203, 0.3);
-    /* border-radius: 10px; */
+    background-color: rgba(255, 192, 203, 0.2);
 }
 
 .getInspiredHeader{
@@ -14,8 +13,6 @@
     background-image: url("../images/inspImg.png");
     background-position: center;
     position: relative;
-
-    /* background-size: cover; */
     
 }
 
@@ -45,8 +42,8 @@
 .get-inspiredP{
     text-align: center;
     margin-bottom: 50px;
-    color: rgba(128, 0, 128, 0.7);
-    font-weight: 500;
+    color: #4a148c;
+    font-weight: 400;
     font-size: 1.3rem;
 }
 
@@ -71,6 +68,7 @@
     max-width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
+    width: 100%;
 
 }
 
@@ -80,27 +78,34 @@
 }
 
 .blog-card h3{
-    color: rgba(255, 0, 43, 0.7);
-    color: rgba(128, 0, 128, 0.7);
+    color: #4a148cbe;
 }
 
 .blog-card p{
-    color: purple;
+    color: #4a148c;
+    font-size: 0.9rem;
 }
 
 .blog-card button {
-    padding: 10px 20px;
-    background-color: rgba(255, 0, 43,0.7);
-    color: #fff;
-    border: none;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid rgb(255, 0, 43);
+    border: 1px solid #4a148c;
+    color: #4a148c;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .blog-card button:hover {
-    background-color: rgba(255, 0, 43, 0.9);
+    background-color: #685580;
+    color: white;
 }
+
+
+
 
 @media (max-width: 600px) {
     .get-inspired {

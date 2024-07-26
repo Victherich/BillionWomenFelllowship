@@ -1,6 +1,6 @@
 .get-involved {
     padding: 20px;
-    background-color: rgba(255, 192, 203, 0.3);
+    background-color: rgba(255, 192, 203, 0.2);
     /* border-radius: 10px; */
     text-align: center;
 }
@@ -8,8 +8,14 @@
 .get-involved h2 {
     margin-bottom: 20px;
     /* color: rgba(255, 0, 43, 0.7); */
-    color: rgba(128, 0, 128, 0.7);
+    /* color: rgba(128, 0, 128, 0.7); */
     color: rgba(255, 0, 43, 0.7);
+}
+
+.get-involved p{
+    color: #4a148c;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .get-involved form {
@@ -26,7 +32,8 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    color: purple;
+    /* color: purple; */
+    color: #4a148c;
 }
 
 .get-involved select{

@@ -246,10 +246,12 @@ const ContactForm = () => {
             )}
           </button>
         </form>
-        <div className="footer-contact" style={{ textAlign: "center", alignItems: "center", color: "purple", position: "relative" }}>
+        <div className="footer-contact" style={{ textAlign: "center", alignItems: "center", color: "#4a148c", position: "relative" }}>
           <br />
          
           <br />
+          <p>Address:  3771 Floyd Rd, Marietta, GA 30060</p>
+          <p>Address:   1, OPA ARO CLOSE, OFF TUNJI ADEBAYO STREET, BESIDE AP FILLING STATION, FAGBA LAGOS.</p>
           <p>Email: billionwomenfellowship@gmail.com</p>
           <p>Phone: +1 (770) 310-2914</p>
         </div>

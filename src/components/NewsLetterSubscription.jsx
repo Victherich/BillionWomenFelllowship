@@ -13,7 +13,7 @@ const NewsletterSubscription = () => {
     return (
         <div className='NewsLetterContainer'>
             <div className="newsletter-container">
-            <h2>Subscribe for Latest Updates</h2>
+            <p>Subscribe for Latest Updates</p>
             <form onSubmit={handleSubmit} className="newsletter-form">
                 <input 
                     type="email" 

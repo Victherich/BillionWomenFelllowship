@@ -65,7 +65,8 @@
 }
 
 .gallery-card p{
-    color: purple;
+    /* color: purple; */
+    color: #4a148c;
 }
 
 .gallery-card img {

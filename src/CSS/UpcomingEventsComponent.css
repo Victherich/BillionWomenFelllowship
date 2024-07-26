@@ -29,11 +29,13 @@
 
 .event-card h3 {
     margin: 10px 0;
-    color: rgba(128, 0, 128, 0.7);
+    /* color: rgba(128, 0, 128, 0.7); */
+    color:#4a148c;
 }
 
 .event-card p{
-    color: purple;
+    /* color: purple; */
+    color: #4a148c;
 }
 
 .events-containerButtonWrap{

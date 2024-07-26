@@ -62,7 +62,7 @@ const scrollToAbout = ()=>{
         <NavLink to={"/"}> HOME</NavLink>
         <NavLink to={"/about"}> ABOUT</NavLink>
         {/* <NavLink to={"/activities"}> ACTIVITIES</NavLink> */}
-        <NavLink to={"/events"}>EVENTS</NavLink>
+        <NavLink to={"/eventspage"}>EVENTS</NavLink>
         <NavLink to={"/testimoniespage"}> TESTIMONIES</NavLink>
         <NavLink to={"/getinspiredpage"}> GET INSPIRED</NavLink>
         <NavLink to={"/galleriespage"}> GALLERY</NavLink>
@@ -79,7 +79,7 @@ const scrollToAbout = ()=>{
         <NavLink to={"/"} onClick={()=>setMenuSwitch(false)}> HOME</NavLink>
         <NavLink to={"/about"} onClick={()=>setMenuSwitch(false)}> ABOUT</NavLink>
         {/* <NavLink to={"/activities"} onClick={()=>setMenuSwitch(false)}>ACTIVITIES</NavLink> */}
-        <NavLink to={"/events"} onClick={()=>setMenuSwitch(false)}>EVENTS</NavLink>
+        <NavLink to={"/eventspage"} onClick={()=>setMenuSwitch(false)}>EVENTS</NavLink>
         <NavLink to={"/testimoniespage"} onClick={()=>setMenuSwitch(false)}>TESTIMONIES</NavLink>
         <NavLink to={"/getinspiredpage"} onClick={()=>setMenuSwitch(false)}>GET INSPIRED</NavLink>
         <NavLink to="/galleriespage" onClick={()=>setMenuSwitch(false)}>GALLERY</NavLink>

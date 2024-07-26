@@ -11,6 +11,8 @@ import GetInspiredPage from './components/GetInspiredPage'
 import GetInspiredDetailPage from './components/GetInspiredDetailPage'
 import GalleriesPage from './components/GalleriesPage'
 import TestimoniesPage from './components/TestimoniesPage'
+import About from './components/About'
+import EventsPage from './components/EventsPage'
 
 const App = () => {
   return (
@@ -24,8 +26,10 @@ const App = () => {
             <Route path="/getinspired/:id" element={<GetInspiredDetailPage/>}/>
             <Route path="/galleriespage" element={<GalleriesPage/>}/>
             <Route path="/testimoniespage" element={<TestimoniesPage/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/eventspage" element={<EventsPage/>}/>
         </Routes>
-        <a href="https://wa.me/2348030906974" ><img src={wp} alt="logo" className="WhatsAppIcon" /></a>
+        <a ><img src={wp} alt="logo" className="WhatsAppIcon" onClick={()=>window.open("https://wa.me/17703102914","_blank")}/></a>
     <Footer/>    
     </BrowserRouter>
   )

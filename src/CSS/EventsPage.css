@@ -1,0 +1,56 @@
+.Pevent-page {
+    padding: 100px 20px;
+    /* padding: 20px; */
+    background: #f7f7f7;
+}
+
+.Pevent-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6a1b9a; /* Purple color for headings */
+}
+
+.Pevent-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.Pevent-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.Pevent-card:hover {
+    transform: translateY(-10px);
+}
+
+.Pevent-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.Pevent-card h3 {
+    color: #4a148c; /* Deep purple color for event titles */
+    margin-bottom: 10px;
+}
+
+.Pevent-card p {
+    /* color: #333; */
+    color: #4a148c;
+}
+
+@media (max-width: 768px) {
+    .Pevent-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

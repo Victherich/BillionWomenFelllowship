@@ -47,7 +47,10 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>navigate("/")}>Home</p>
-          <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>handleAbout("about")}>About</p>
+          <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>navigate("/about")}>About</p>
+          <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>navigate("/eventspage")}>Events</p>
+          <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>navigate("/testimoniespage")}>Testimonies</p>
+          <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>navigate("/getinspiredpage")}>Get Inspired</p>
           <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>navigate("/contact")}>Contact</p>
        
         </div>
@@ -55,6 +58,10 @@ const Footer = () => {
      
 
           <h4 style={{textDecoration:"underline"}}>Contact</h4>
+          <p>Address: 3771 Floyd Rd, Marietta, GA 30060</p>
+          <p>Address: 1, Opa Aro Close,<br/>
+           Off Tunji Adebayo Street,<br/>
+            Beside AP Filling Station, Fagba Lagos.</p>
           <p>Email: billionwomenfellowship@gmail.com</p>
           <p>Phone: +1 (770) 310-2914</p>
           {/* <p>Phone: +233 54 827 6687</p> */}

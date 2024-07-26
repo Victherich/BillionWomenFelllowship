@@ -8,11 +8,11 @@ import { useNavigate } from 'react-router-dom';
 
 const events = [
     { id: 1,pic:eImg1, title: 'PRAYER & BREAKTHROUGH BREAKFAST', convener:"PASTOR SADE KUKU",description: 'For such a time as this...Esther 4:14', date: '2024-08-24', time:"10AM", venue:"1, OPA ARO CLOSE, OFF TUNJI ADEBAYO STREET, BESIDE AP FILLING STATION, FAGBA LAGOS." },
-    { id: 2,pic:eImg1, title: 'PRAYER & BREAKTHROUGH BREAKFAST', convener:"PASTOR SADE KUKU",description: 'For such a time as this...Esther 4:14', date: '2024-08-24', time:"10AM", venue:"1, OPA ARO CLOSE, OFF TUNJI ADEBAYO STREET, BESIDE AP FILLING STATION, FAGBA LAGOS." },
-    { id: 3,pic:eImg1, title: 'PRAYER & BREAKTHROUGH BREAKFAST', convener:"PASTOR SADE KUKU",description: 'For such a time as this...Esther 4:14', date: '2024-08-24', time:"10AM", venue:"1, OPA ARO CLOSE, OFF TUNJI ADEBAYO STREET, BESIDE AP FILLING STATION, FAGBA LAGOS." },
+    // { id: 2,pic:eImg1, title: 'PRAYER & BREAKTHROUGH BREAKFAST2', convener:"PASTOR SADE KUKU",description: 'For such a time as this...Esther 4:14', date: '2024-08-24', time:"10AM", venue:"1, OPA ARO CLOSE, OFF TUNJI ADEBAYO STREET, BESIDE AP FILLING STATION, FAGBA LAGOS." },
+  
 ];
 
-const UpcomingEventsComponent = () => {
+const EventsPage = () => {
     const navigate = useNavigate()
     const responsive = {
         desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
@@ -46,20 +46,18 @@ const UpcomingEventsComponent = () => {
     };
 
     return (
-        <div className="events-container">
+        <div className="events-container" 
+        style={{display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+        flexDirection:"column",
+        gap:"30px",
+        paddingTop:"100px",
+        width:"100%"}}>
             <h2>UPCOMING EVENTS</h2>
-            <Carousel 
-              responsive={responsive}
-              infinite={true}
-              autoPlay={true}
-              autoPlaySpeed={3000}
-              keyBoardControl={true}
-             //  showDots={true}
-              renderButtonGroupOutside={true}
-            >
                 {events.map(event => (
-                    <div key={event.id} className="event-card" >
-                        <img src={event.pic} alt="event image"/>
+                    <div key={event.id} className="event-card" style={{width:"300px"}}>
+                        <img src={event.pic} alt="event image" />
                         <h3>{event.title}</h3>
                         <p>with</p>
                         <p style={{fontWeight:"bold"}}>{event.convener}</p>
@@ -76,13 +74,12 @@ const UpcomingEventsComponent = () => {
       </button>
                     </div>
                 ))}
-            </Carousel>
             <div className='events-containerButtonWrap'>
-            <button onClick={()=>navigate("/eventspage")}>See More Events</button>
+        
             </div>
             
         </div>
     );
 };
 
-export default UpcomingEventsComponent;
+export default EventsPage;

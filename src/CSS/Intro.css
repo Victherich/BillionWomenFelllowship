@@ -11,10 +11,10 @@
   
   .intro-heading {
     font-size: 2.5rem;
-    color: rgb(255, 0, 43);
+    color: rgba(255, 0, 43, 0.7);
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 2px #000;
+    /* text-shadow: 1px 1px 2px #000; */
     text-align: center;
   }
   
@@ -28,9 +28,10 @@
   
   .intro-content {
  
-    font-size: 1.2rem;
-    color: #333;
-    color: purple;
+    font-size: 1.1rem;
+
+    /* color: purple; */
+    color: #4a148c;
     max-width: 800px;
     line-height: 1.6;
     text-align: justify;

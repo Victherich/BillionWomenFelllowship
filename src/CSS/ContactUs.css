@@ -58,7 +58,8 @@
 
   .contact-form-container h2 {
     text-align: center;
-    color: purple;
+    /* color: purple; */
+    color: #4a148c;
 
     margin-bottom: 20px;
     position: relative;
@@ -76,7 +77,8 @@
   .form-group label {
     display: block;
     margin-bottom: 5px;
-    color:purple;
+    /* color:purple; */
+    color: #4a148c;
     position: relative;
     /* font-weight: bold; */
   }
