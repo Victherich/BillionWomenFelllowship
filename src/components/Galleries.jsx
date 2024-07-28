@@ -2,35 +2,36 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../CSS/Galleries.css';
-import gpic1 from "../images/gpic1.jpeg";
-import gpic2 from "../images/gpic2.jpeg";
-import gpic3 from "../images/gpic3.jpeg";
-import gpic4 from "../images/gpic4.jpeg";
+import galleries from './GalleriesPhoto';
+// import gpic1 from "../images/gpic1.jpeg";
+// import gpic2 from "../images/gpic2.jpeg";
+// import gpic3 from "../images/gpic3.jpeg";
+// import gpic4 from "../images/gpic4.jpeg";
 import { useNavigate } from 'react-router-dom';
 
-const galleries = [
-    {
-        id: 1,
-        title: 'Event Photos',
-        image: gpic1
-    },
-    {
-        id: 2,
-        title: 'Workshop Videos',
-        image: gpic2
-    },
-    {
-        id: 3,
-        title: 'Event Photos',
-        image: gpic3
-    },
-    {
-        id: 4,
-        title: 'Workshop Videos',
-        image: gpic4
-    },
-    // Add more galleries here
-];
+// const galleries = [
+//     {
+//         id: 1,
+//         title: 'Event Photos',
+//         image: gpic1
+//     },
+//     {
+//         id: 2,
+//         title: 'Workshop Videos',
+//         image: gpic2
+//     },
+//     {
+//         id: 3,
+//         title: 'Event Photos',
+//         image: gpic3
+//     },
+//     {
+//         id: 4,
+//         title: 'Workshop Videos',
+//         image: gpic4
+//     },
+//     // Add more galleries here
+// ];
 
 const responsive = {
     superLargeDesktop: {

@@ -40,7 +40,7 @@ const GetInspiredPage = () => {
                                 <button>Read More</button>
                             </Link>
                             <button className='ShareButton' onClick={(e) => { e.stopPropagation(); handleShare(blog); }}>
-                <FaShareAlt />
+                <FaShareAlt /> Share
               </button>
                         </div>
                     ))}

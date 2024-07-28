@@ -14,7 +14,7 @@ const GetInspiredDetailPage = () => {
         if (navigator.share) {
           navigator.share({
             title: blog.title,
-            text: blog.content,
+            text: blog.excerpt,
             url: window.location.href,
           }).catch(error => console.error('Error sharing', error));
         } else {
@@ -31,6 +31,7 @@ const GetInspiredDetailPage = () => {
         <div className="blog-detail">
             <img src={blog.image} alt={blog.title} className="blog-detail-image" />
             <h2>{blog.title}</h2>
+            <h3 style={{color:"pink"}}>{blog.excerpt}</h3>
             <p>{blog.content}</p>
             <button onClick={handleShare} style={{marginLeft:"10px"}} className='BlogDetailShare'>
         <FaShareAlt /> Share

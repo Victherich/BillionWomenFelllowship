@@ -1,24 +1,38 @@
 import React from 'react';
 import '../CSS/TestimoniesComponent.css';
 import { useNavigate } from 'react-router-dom';
+import { FaShareAlt } from "react-icons/fa";
+import testimonies from './TestimoniesContents';
 
-const testimonies = [
-    { id: 1, name: 'Jane Doe', testimony: 'This fellowship has changed my life!' },
-    { id: 2, name: 'Mary Smith', testimony: 'A wonderful community and support system.' },
-    { id: 3, name: 'Mary Smith', testimony: 'A wonderful community and support system.' }
-    // Add more testimonies here
-];
 
 const TestimoniesComponent = () => {
     const navigate = useNavigate()
+    
+    const handleShare = (testimony) => {
+        if (navigator.share) {
+          navigator.share({
+            title: testimony.name,
+            text: testimony.testimony,
+            url: window.location.origin + '/testimoniespage',
+          }).catch(error => console.error('Error sharing', error));
+        } else {
+          navigator.clipboard.writeText(window.location.origin + '/testimoniespage' );
+          alert("URL copied to clipboard");
+        }
+      };
+
+
     return (
        <div className='TestimoniesWrap'>
              <div className="testimonies-container">
             <h2>TESTIMONIES</h2>
-            {testimonies.map(testimony => (
+            {testimonies.slice(0,2).map(testimony => (
                 <div key={testimony.id} className="testimony-card">
                     <p>"{testimony.testimony}"</p>
                     <h4>- {testimony.name}</h4>
+                    <button className='BlogDetailShare' onClick={(e) => { e.stopPropagation(); handleShare(testimony); }}>
+                            <FaShareAlt /> Share
+                        </button>
                 </div>
             ))}
         </div>
