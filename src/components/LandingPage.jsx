@@ -11,9 +11,9 @@ import GetInspired from './GetInspired'
 import GetInvolved from './GetInvolved'
 import FounderMessage from './FounderMessage'
 import A1 from "../videos/video1.mp4"
-import A2 from "../videos/video5.mp4"
-import A3 from "../videos/video6.mp4"
-import A4 from "../videos/video7.mp4"
+import A2 from "../videos/video2.mp4"
+import A3 from "../videos/video3.mp4"
+import A4 from "../videos/video4.mp4"
 
 const LandingPage = () => {
   return (
