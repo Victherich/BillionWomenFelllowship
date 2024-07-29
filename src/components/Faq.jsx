@@ -3,7 +3,7 @@ import "../CSS/Faq.css"
 
 
 const faqs = [
-    { question: "What types of programs does the fellowship offer?", answer: "We offer a variety of programs including emotional and mental health support, holistic health and wellness initiatives, spiritual guidance, career and financial empowerment, marital and relationship counseling, personal development workshops, and community building efforts." },
+    { question: "What types of programs does the fellowship offer?", answer: "We offer a variety of programs including emotional and mental health support, holistic health and wellness initiatives, spiritual guidance, career and financial education, marital and relationship counseling, personal development workshops, and community building efforts." },
     { question: "How can I join the fellowship?", answer: "You can join the fellowship by attending our events, meetings and participating in our programs. You can contact us through the contact page and other provided methods on this website for more information." },
     // { question: "Where are the fellowship meetings held?", answer: "Our fellowship meetings are held at various locations. You can find the details for each event on our Events page. We also offer virtual meetings and workshops to accommodate those who cannot attend in person." },
     { question: "Do I need to be a member of a specific denomination to join?", answer: "No, we are an interdenominational fellowship welcoming women from all faith backgrounds to participate in our programs and events." },

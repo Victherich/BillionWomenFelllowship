@@ -36,172 +36,172 @@ import gpic34 from "../images/gpic34.png";
 const galleries = [
     {
         "id": 1,
-        "title": "Women’s Retreat",
+        // "title": "Women’s Retreat",
         "image": gpic1
     },
     {
         "id": 2,
-        "title": "Faith and Wellness Workshop",
+        // "title": "Faith and Wellness Workshop",
         "image": gpic2
     },
     {
         "id": 3,
-        "title": "Charity Fundraiser Gala",
+        // "title": "Charity Fundraiser Gala",
         "image": gpic3
     },
     {
         "id": 4,
-        "title": "Youth Mentorship Program",
+        // "title": "Youth Mentorship Program",
         "image": gpic4
     },
     {
         "id": 5,
-        "title": "Bible Study Group",
+        // "title": "Bible Study Group",
         "image": gpic5
     },
     {
         "id": 6,
-        "title": "Community Outreach",
+        // "title": "Community Outreach",
         "image": gpic6
     },
     {
         "id": 7,
-        "title": "Prayer Breakfast",
+        // "title": "Prayer Breakfast",
         "image": gpic7
     },
     {
         "id": 8,
-        "title": "Holiday Celebration",
+        // "title": "Holiday Celebration",
         "image": gpic8
     },
     {
         "id": 9,
-        "title": "Volunteer Appreciation Night",
+        // "title": "Volunteer Appreciation Night",
         "image": gpic9
     },
     {
         "id": 10,
-        "title": "Mother’s Day Luncheon",
+        // "title": "Mother’s Day Luncheon",
         "image": gpic10
     },
     {
         "id": 11,
-        "title": "Christmas Caroling",
+        // "title": "Christmas Caroling",
         "image": gpic11
     },
     {
         "id": 12,
-        "title": "Leadership Training Seminar",
+        // "title": "Leadership Training Seminar",
         "image": gpic12
     },
     {
         "id": 13,
-        "title": "Bishop Taiwo Kuku & Pastor Sade Kuku",
+        // "title": "Bishop Taiwo Kuku & Pastor Sade Kuku",
         "image": gpic13
     },
     {
         "id": 14,
-        "title": "Book Club Meeting",
+        // "title": "Book Club Meeting",
         "image": gpic14
     },
     {
         "id": 15,
-        "title": "Bishop Taiwo Kuku & Pastor Sade Kuku",
+        // "title": "Bishop Taiwo Kuku & Pastor Sade Kuku",
         "image": gpic15
     },
     {
         "id": 16,
-        "title": "Women’s Conference",
+        // "title": "Women’s Conference",
         "image": gpic16
     },
     {
         "id": 17,
-        "title": "Free Health Screening",
+        // "title": "Free Health Screening",
         "image": gpic17
     },
     {
         "id": 18,
-        "title": "Free Health Screening",
+        // "title": "Free Health Screening",
         "image": gpic18
     },
     {
         "id": 19,
-        "title": "Free Health Screening",
+        // "title": "Free Health Screening",
         "image": gpic19
     },
     {
         "id": 20,
-        "title": "Thanksgiving Dinner",
+        // "title": "Thanksgiving Dinner",
         "image": gpic20
     },
     {
         "id": 21,
-        "title": "Easter Egg Hunt",
+        // "title": "Easter Egg Hunt",
         "image": gpic21
     },
     {
         "id": 22,
-        "title": "Free Health Screening",
+        // "title": "Free Health Screening",
         "image": gpic22
     },
     {
         "id": 23,
-        "title": "Free Health Screening",
+        // "title": "Free Health Screening",
         "image": gpic23
     },
     {
         "id": 24,
-        "title": "Free Health Screening",
+        // "title": "Free Health Screening",
         "image": gpic24
     },
     {
         "id": 25,
-        "title": "Free Health Screening",
+        // "title": "Free Health Screening",
         "image": gpic25
     },
     {
         "id": 26,
-        "title": "New Year’s Eve Service",
+        // "title": "New Year’s Eve Service",
         "image": gpic26
     },
     {
         "id": 27,
-        "title": "Back-to-School Bash",
+        // "title": "Back-to-School Bash",
         "image": gpic27
     },
     {
         "id": 28,
-        "title": "Father’s Day Celebration",
+        // "title": "Father’s Day Celebration",
         "image": gpic28
     },
     {
         "id": 29,
-        "title": "Lenten Reflections",
+        // "title": "Lenten Reflections",
         "image": gpic29
     },
     {
         "id": 30,
-        "title": "Bishop Taiwo Kuku & Pastor Sade Kuku",
+        // "title": "Bishop Taiwo Kuku & Pastor Sade Kuku",
         "image": gpic30
     },
     {
         "id": 31,
-        "title": "Choir Concert",
+        // "title": "Choir Concert",
         "image": gpic31
     },
     {
         "id": 32,
-        "title": "Advent Prayer Service",
+        // "title": "Advent Prayer Service",
         "image": gpic32
     },
     {
         "id": 33,
-        "title": "Soup Kitchen Volunteer Day",
+        // "title": "Soup Kitchen Volunteer Day",
         "image": gpic33
     },
     {
         "id": 34,
-        "title": "Mission Trip",
+        // "title": "Mission Trip",
         "image": gpic34
     }
 ];

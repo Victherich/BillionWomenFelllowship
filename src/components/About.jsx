@@ -38,7 +38,7 @@ const About = () => {
                   <div className="WhoWeAreTextWrap">
                       <h1>Who We Are</h1>
                         <p>
-                        Billion Women Interdenominational Fellowship (BWGF) is a community of faith-driven women committed to living out the virtues of the modern Proverbs 31 woman.
+                        Billion Women  Global Fellowship (BWGF) is a community of faith-driven women committed to living out the virtues of the modern Proverbs 31 woman.
                         <br/><br/>
                          Founded over 20 years ago by Pastor Sade Kuku, BWGF is rooted in a vision to empower both single and married women to discover and fulfill their God-given potential. We are a diverse and inclusive fellowship, welcoming women from all walks of life who seek to deepen their spiritual journey, strengthen their relationships, and grow in various aspects of their lives. 
                          <br/><br/>
@@ -52,7 +52,7 @@ const About = () => {
             <div className="WhatWeDo" id="whatwedo" >
                  <h1 style={{position:"relative"}}>What We Do</h1>
                  <p style={{ position: "relative"}}>
-  At Billion Women Interdenominational Fellowship (BWGF), we are committed to empowering women through a holistic approach that addresses various aspects of their lives. Our initiatives are designed to inspire and equip women to reach their full potential and make a positive impact in their communities and beyond.
+  At Billion Women Gobal Fellowship (BWGF), we are committed to empowering women through a holistic approach that addresses various aspects of their lives. Our initiatives are designed to inspire and equip women to reach their full potential and make a positive impact in their communities and beyond.
   <br /><br />
   <span>1. Faith and Spiritual Growth: </span>
   We provide Bible studies, prayer meetings, and spiritual workshops aimed at deepening women's relationships with God. These programs are designed to nurture spiritual growth and help women live out God's will in their everyday lives.
