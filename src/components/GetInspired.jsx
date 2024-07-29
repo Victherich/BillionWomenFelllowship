@@ -61,17 +61,16 @@ const GetInspired = () => {
 
     const handleShare = (blog) => {
         if (navigator.share) {
-            navigator.share({
-                title: blog.title,
-                text: blog.excerpt,
-                url: window.location.origin + '/getinspired/' + blog.id,
-                files: [new File([blog.image], 'image.jpg', { type: 'image/jpeg' })], // Sharing image file
-            }).catch(error => console.error('Error sharing', error));
+          navigator.share({
+            title: blog.title,
+            text: blog.excerpt,
+            url: window.location.origin + '/getinspired/' + blog.id,
+          }).catch(error => console.error('Error sharing', error));
         } else {
-            navigator.clipboard.writeText(window.location.origin + '/getinspired/' + blog.id);
-            alert("URL copied to clipboard");
+          navigator.clipboard.writeText(window.location.origin + '/getinspired/' + blog.id);
+          alert("URL copied to clipboard");
         }
-    };
+      };
 
     return (
         <div className="get-inspired">
