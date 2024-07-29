@@ -18,11 +18,11 @@ const LandingPage = () => {
       <Intro/>
       <Video video="/video1.mp4"/>
       <FounderMessage/>
-      <Video video="/video2.mp4"/>
+      <Video video="/video5.mp4"/>
       <UpcomingEventsComponent/>
-      <Video video="/video3.mp4"/>
+      <Video video="/video6.mp4"/>
       <GetInspired/>
-      <Video video="/video4.mp4"/>
+      <Video video="/video7.mp4"/>
       <TestimoniesComponent/>
       <NewsletterSubscription/>
       <Galleries/>
