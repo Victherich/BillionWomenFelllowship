@@ -3,29 +3,16 @@ import "../CSS/Video.css";
 
 
 
-const Video = () => {
+const Video = ({video}) => {
   return (
     <div className="VideoContainer">
       {/* <img src={BottleAncCup} alt="bottle and cup"/> */}
       <video className="VideoPlayer" controls autoPlay loop muted>
-        <source src="/video1.mp4" type="video/mp4" />
+        {/* <source src="/video1.mp4" type="video/mp4" /> */}
+        <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* <img src={BottleAncCup2} alt="bottle and cup"/> */}
-      <video className="VideoPlayer" controls autoPlay loop muted>
-        <source src="/video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <video className="VideoPlayer" controls autoPlay loop muted>
-        <source src="/video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      {/* <img src={BottleAncCup2} alt="bottle and cup"/> */}
-      <video className="VideoPlayer" controls autoPlay loop muted>
-        <source src="/video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
     </div>
   );
 }
