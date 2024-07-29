@@ -10,19 +10,23 @@ import Galleries from './Galleries'
 import GetInspired from './GetInspired'
 import GetInvolved from './GetInvolved'
 import FounderMessage from './FounderMessage'
+import A1 from "../videos/video1.mp4"
+import A2 from "../videos/video5.mp4"
+import A3 from "../videos/video6.mp4"
+import A4 from "../videos/video7.mp4"
 
 const LandingPage = () => {
   return (
     <div>
       <Hero/>
       <Intro/>
-      <Video video="/video1.mp4"/>
+      <Video video={A1}/>
       <FounderMessage/>
-      <Video video="/video5.mp4"/>
+      <Video video={A2}/>
       <UpcomingEventsComponent/>
-      <Video video="/video6.mp4"/>
+      <Video video={A3}/>
       <GetInspired/>
-      <Video video="/video7.mp4"/>
+      <Video video={A4}/>
       <TestimoniesComponent/>
       <NewsletterSubscription/>
       <Galleries/>
