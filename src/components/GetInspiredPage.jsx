@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../CSS/GetInspired.css';
 import { Context } from './Context';
 import {FaShareAlt} from "react-icons/fa"
+import BackButton from './BackButton';
 
 
 const GetInspiredPage = () => {
@@ -46,6 +47,8 @@ const GetInspiredPage = () => {
                     ))}
                 </div>
             </div>
+            <br/>
+            <BackButton/>
         </div>
     );
 };

@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../CSS/Galleries.css';
 import galleries from "./GalleriesPhoto"
+import BackButton from './BackButton';
 
 const GalleriesPage = () => {
     return (
@@ -20,6 +21,7 @@ const GalleriesPage = () => {
                     ))}
                 </div>
             </div>
+            <BackButton/>
         </div>
     );
 };

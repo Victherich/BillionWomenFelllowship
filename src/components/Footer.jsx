@@ -29,7 +29,7 @@ const Footer = () => {
         
         <div className="footer-contact">
      
-          <img src={Logo1} alt="logo1" style={{width:"50px",height:"50px",marginBottom:"10px",borderRadius:"50%"}}/>
+          <img src={Logo1} alt="logo1" style={{width:"50px",height:"50px",marginBottom:"10px",borderRadius:"50%"}} onClick={()=>navigate("/")}/>
 
           <h4>BILLION WOMEN <br/>
           GLOBAL<br/>

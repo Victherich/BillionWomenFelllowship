@@ -5,6 +5,7 @@ import '../CSS/UpcomingEventsComponent.css';
 import eImg1 from "../images/eImg1.jpeg"
 import {FaShareAlt} from "react-icons/fa"
 import { useNavigate } from 'react-router-dom';
+import BackButton from './BackButton';
 
 const events = [
     { id: 1,pic:eImg1, title: 'PRAYER & BREAKTHROUGH BREAKFAST', convener:"PASTOR SADE KUKU",description: 'For such a time as this...Esther 4:14', date: '2024-08-24', time:"10AM", venue:"1, OPA ARO CLOSE, OFF TUNJI ADEBAYO STREET, BESIDE AP FILLING STATION, FAGBA LAGOS." },
@@ -77,7 +78,7 @@ const EventsPage = () => {
             <div className='events-containerButtonWrap'>
         
             </div>
-            
+            <BackButton/>
         </div>
     );
 };

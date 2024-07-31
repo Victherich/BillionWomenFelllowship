@@ -1,7 +1,7 @@
 
 import React, { useContext, useState,useRef,useEffect } from 'react'
 import { Context } from './Context'
-import { FaArrowAltCircleDown, FaCaretRight, FaCartArrowDown, FaChevronDown, FaDashcube, FaUserCircle } from 'react-icons/fa'
+import { FaArrowAltCircleDown, FaCaretRight, FaCartArrowDown, FaChevronDown, FaDashcube, FaHome, FaUserCircle } from 'react-icons/fa'
 import { FaBurger, FaCartShopping, FaElementor, FaMobileScreenButton } from 'react-icons/fa6'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import "../CSS/Header.css"
@@ -74,6 +74,7 @@ const scrollToAbout = ()=>{
         {!userToken&&<button onClick={()=>navigate("/signup")}>Register</button>}
          {userToken&&<div className='CartWrap' onClick={()=>navigate("/userdashboard")}><FaUserCircle /><p> Hi, {userInfo.fullName.slice(0,5)}</p></div>}
         </div> */}
+        {location.pathname!=="/"&&<p className='HomeMobile' onClick={()=>navigate("/")}><FaHome/>Home</p>}
         <FaBurger style={{color:"white",cursor:"pointer"}} className="Burger" onClick={()=>setMenuSwitch(!menuSwitch)}/>
         {menuSwitch&&<div className='Menu2 animate__animated animate__slideInRight' ref={menuRef}>
         <NavLink to={"/"} onClick={()=>setMenuSwitch(false)}> HOME</NavLink>

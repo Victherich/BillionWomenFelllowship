@@ -111,6 +111,10 @@
     display: none;
 }
 
+.HomeMobile{
+    display: none;
+}
+
 @media screen and (max-width:884px) {
     .Header{
         padding: 10px 10px;
@@ -131,6 +135,14 @@
         justify-content: space-between;
         padding-left: 30px;
         padding-right: 30px;
+    }
+    .HomeMobile{
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
     }
 }
 

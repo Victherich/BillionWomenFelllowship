@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Founder from "../images/FounderBWGF.jpeg"
 import s3 from '../images/gpic8.jpeg'
 import { useNavigate } from 'react-router-dom';
+import BackButton from './BackButton';
 
 
 
@@ -163,6 +164,7 @@ The practical teaching and action steps will help you grow in character, as you 
         </div>
       </section>
     </div>
+    <BackButton/>
     {/* <div className='ContactUsNowWrap'>
                 <h1 onClick={handleNavigate}>Contact us now !!!</h1>
               </div> */}

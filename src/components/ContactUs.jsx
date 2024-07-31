@@ -6,6 +6,7 @@ import { css } from '@emotion/react';
 import ClipLoader from 'react-spinners/ClipLoader';
 import Logo from "../images/logo.jpeg";
 import { useForm } from '@formspree/react';
+import BackButton from './BackButton';
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("mrbzenga");
@@ -133,6 +134,9 @@ const ContactForm = () => {
           <p>Phone: +1 (770) 310-2914</p>
         </div>
       </div>
+      <br/>
+      <br/>
+      <BackButton/>
     </div>
   );
 };

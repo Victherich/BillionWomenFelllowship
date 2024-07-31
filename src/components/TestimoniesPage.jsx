@@ -2,6 +2,7 @@ import React from 'react';
 import '../CSS/TestimoniesComponent.css';
 import { FaShareAlt } from "react-icons/fa";
 import testimonies from './TestimoniesContents';
+import BackButton from './BackButton';
 
 
 const TestimoniesPage = () => {
@@ -45,6 +46,7 @@ const TestimoniesPage = () => {
         </div>
     
        </div>
+       <BackButton/>
        </div>
     );
 };
