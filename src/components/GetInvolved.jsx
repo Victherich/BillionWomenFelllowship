@@ -11,6 +11,7 @@ const GetInvolved = () => {
   const [state, handleSubmit] = useForm("mgvwogoo");
   const [name, setName] = useState("");
   const [email, setEmail] = useState('');
+  const [phone,setPhone]=useState("");
   const [role, setRole] = useState('');
   const [specify, setSpecify] = useState('');
   const [required, setRequired] = useState(false);
@@ -37,6 +38,7 @@ const GetInvolved = () => {
         }).then(() => {
           setName('');
           setEmail('');
+          setPhone('');
           setRole('');
           setSpecify('');
           setSubmitting(false);
@@ -73,6 +75,14 @@ const GetInvolved = () => {
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="text"
+          name="phone"
+          placeholder="Enter your phone number"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
           required
         />
         <select

@@ -1,5 +1,5 @@
 import React from 'react'
-import FounderPic from "../images/FounderPic.png"
+import FounderPic from "../images/FounderMessageImg.png"
 import "../CSS/FounderMessage.css"
 
 const FounderMessage = () => {
