@@ -107,12 +107,27 @@
     
 }
 
-.Burger{
+.Burger, .Burger2{
     display: none;
 }
 
-.HomeMobile{
+.HomeMobile, .HomeMobile2{
     display: none;
+}
+
+.HeaderContact2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2px 0px;
+    height: auto;
+    /* background:linear-gradient(to bottom, #F40269, #810065 ); */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 10px;
 }
 
 @media screen and (max-width:884px) {
@@ -127,6 +142,12 @@
 @media screen and (max-width:768px){
     .Burger{
         display: flex;
+        color: white;
+    }
+
+    .Burger2{
+        display: flex;
+        color: purple;
     }
     .HeaderLeft{
         display: none;
@@ -139,6 +160,14 @@
     .HomeMobile{
         display: flex;
         color: white;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+    }
+    .HomeMobile2{
+        display: flex;
+        color: purple;
         justify-content: center;
         align-items: center;
         gap: 5px;

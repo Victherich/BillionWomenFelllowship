@@ -32,8 +32,27 @@ import gpic31 from "../images/gpic31.png";
 import gpic32 from "../images/gpic32.png";
 import gpic33 from "../images/gpic33.png";
 import gpic34 from "../images/gpic34.png";
+import gpic35 from "../images/gpic35.jpeg"
+import gpic36 from "../images/gpic36.jpeg"
+import gpic37 from "../images/gpic37.jpeg"
 
 const galleries = [
+    {
+        "id": 1,
+        // "title": "Women’s Retreat",
+        "image": gpic35
+    },
+    {
+        "id": 2,
+        // "title": "Faith and Wellness Workshop",
+        "image": gpic36
+    },
+    {
+        "id": 3,
+        // "title": "Charity Fundraiser Gala",
+        "image": gpic37
+    },
+
     {
         "id": 1,
         // "title": "Women’s Retreat",

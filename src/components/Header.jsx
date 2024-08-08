@@ -56,7 +56,7 @@ const scrollToAbout = ()=>{
 
 
   return (
-    <div className='Header'>
+    <div className={window.location.pathname==="/contact2"?"HeaderContact2":'Header'}>
         <img className='HeaderImg' src={Logo} alt="Logo" onClick={()=>navigate("/")}/>
         <div className='HeaderLeft'>
         <NavLink to={"/"}> HOME</NavLink>
@@ -66,7 +66,9 @@ const scrollToAbout = ()=>{
         <NavLink to={"/testimoniespage"}> TESTIMONIES</NavLink>
         <NavLink to={"/getinspiredpage"}> GET INSPIRED</NavLink>
         <NavLink to={"/galleriespage"}> GALLERY</NavLink>
+        
         <NavLink to="/contact">CONTACT</NavLink>
+        <NavLink to={"/contact2"}> GET IN TOUCH</NavLink>
         </div>
         {/* <div className='HeaderRight'>
         <div className='CartWrap' onClick={()=>navigate("/cartpage")}><FaCartArrowDown/>({cart.length})</div>
@@ -74,8 +76,8 @@ const scrollToAbout = ()=>{
         {!userToken&&<button onClick={()=>navigate("/signup")}>Register</button>}
          {userToken&&<div className='CartWrap' onClick={()=>navigate("/userdashboard")}><FaUserCircle /><p> Hi, {userInfo.fullName.slice(0,5)}</p></div>}
         </div> */}
-        {location.pathname!=="/"&&<p className='HomeMobile' onClick={()=>navigate("/")}><FaHome/>Home</p>}
-        <FaBurger style={{color:"white",cursor:"pointer"}} className="Burger" onClick={()=>setMenuSwitch(!menuSwitch)}/>
+        {location.pathname!=="/"&&<p className={window.location.pathname==="/contact2"?'HomeMobile2':'HomeMobile'} onClick={()=>navigate("/")}><FaHome/>Home</p>}
+        <FaBurger style={{cursor:"pointer"}} className={window.location.pathname==="/contact2"?"Burger2":"Burger"} onClick={()=>setMenuSwitch(!menuSwitch)}/>
         {menuSwitch&&<div className='Menu2 animate__animated animate__slideInRight' ref={menuRef}>
         <NavLink to={"/"} onClick={()=>setMenuSwitch(false)}> HOME</NavLink>
         <NavLink to={"/about"} onClick={()=>setMenuSwitch(false)}> ABOUT</NavLink>
@@ -85,6 +87,7 @@ const scrollToAbout = ()=>{
         <NavLink to={"/getinspiredpage"} onClick={()=>setMenuSwitch(false)}>GET INSPIRED</NavLink>
         <NavLink to="/galleriespage" onClick={()=>setMenuSwitch(false)}>GALLERY</NavLink>
         <NavLink to="/contact" onClick={()=>setMenuSwitch(false)}>CONTACT</NavLink>
+        <NavLink to={"/contact2"} onClick={()=>setMenuSwitch(false)}> GET IN TOUCH</NavLink>
         </div>}
     </div>
   )
