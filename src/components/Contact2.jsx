@@ -9,7 +9,7 @@ import { useForm } from '@formspree/react';
 import BackButton from './BackButton';
 
 const ContactForm2 = () => {
-  const [state, handleSubmit] = useForm("mrbzenga");
+  const [state, handleSubmit] = useForm("mjkbrrgz");
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: '',
@@ -72,7 +72,7 @@ const ContactForm2 = () => {
   return (
     <div className='ContactFormWrap2'>
       <div className="contact-form-container2">
-        <h2>Get in Touch</h2>
+        <h2>Booking</h2>
         {/* <img src={Logo} alt="Logo" style={{ position: "relative", width: "70px", borderRadius: "50%" }} /> */}
         {error && <p style={{ color: 'red' }}>{error}</p>}
         <form onSubmit={handleSubmitForm}>
@@ -139,7 +139,7 @@ const ContactForm2 = () => {
             {submitting ? (
               <ClipLoader color={"#ffffff"} loading={submitting} css={override} size={15} />
             ) : (
-              "Get in Touch"
+              "Submit"
             )}
           </button>
         </form>

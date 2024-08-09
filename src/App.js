@@ -29,7 +29,7 @@ const App = () => {
             <Route path="/testimoniespage" element={<TestimoniesPage/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/eventspage" element={<EventsPage/>}/>
-            <Route path="/contact2" element={<ContactForm2/>}/>
+            <Route path="/booking" element={<ContactForm2/>}/>
         </Routes>
         <a ><img src={wp} alt="logo" className="WhatsAppIcon" onClick={()=>window.open("https://wa.me/17703102914","_blank")}/></a>
     <Footer/>    

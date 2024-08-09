@@ -52,7 +52,7 @@ const Footer = () => {
           <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>navigate("/testimoniespage")}>Testimonies</p>
           <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>navigate("/getinspiredpage")}>Get Inspired</p>
           <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>navigate("/contact")}>Contact</p>
-       
+          <p style={{cursor:"pointer"}} className="footer-link" onClick={()=>navigate("/booking")}>Booking</p>
         </div>
         <div className="footer-contact">
      

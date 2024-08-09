@@ -9,6 +9,7 @@ import "../CSS/Header.css"
 // import { useDispatch, useSelector } from 'react-redux'
 // import { userLogout } from '../Features/Slice'
 import Logo from "../images/logo.jpeg"
+import 'animate.css'
 
 const Header = () => {
    // const userToken = useSelector(state=>state.userToken)
@@ -68,7 +69,7 @@ const scrollToAbout = ()=>{
         <NavLink to={"/galleriespage"}> GALLERY</NavLink>
         
         <NavLink to="/contact">CONTACT</NavLink>
-        <NavLink to={"/contact2"}> GET IN TOUCH</NavLink>
+        <NavLink to={"/booking"}> BOOKING</NavLink>
         </div>
         {/* <div className='HeaderRight'>
         <div className='CartWrap' onClick={()=>navigate("/cartpage")}><FaCartArrowDown/>({cart.length})</div>
@@ -87,7 +88,7 @@ const scrollToAbout = ()=>{
         <NavLink to={"/getinspiredpage"} onClick={()=>setMenuSwitch(false)}>GET INSPIRED</NavLink>
         <NavLink to="/galleriespage" onClick={()=>setMenuSwitch(false)}>GALLERY</NavLink>
         <NavLink to="/contact" onClick={()=>setMenuSwitch(false)}>CONTACT</NavLink>
-        <NavLink to={"/contact2"} onClick={()=>setMenuSwitch(false)}> GET IN TOUCH</NavLink>
+        <NavLink to={"/booking"} onClick={()=>setMenuSwitch(false)}> BOOKING</NavLink>
         </div>}
     </div>
   )
