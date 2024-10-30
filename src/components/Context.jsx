@@ -13,6 +13,7 @@ export const Context = createContext()
 
 const ContextProvider = ({children}) => {
 const [state,setState]=useState(false)
+const check = ''
 
 
 const blogs = [
