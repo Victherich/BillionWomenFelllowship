@@ -6,10 +6,10 @@ import eImg1 from "../images/eImg1.jpeg"
 import {FaShareAlt} from "react-icons/fa"
 import { useNavigate } from 'react-router-dom';
 import BackButton from './BackButton';
-import MinistersTraining from "../images/MinistersTraining.jpeg"
+import MinistersTrainingr from "../images/MinistersTraining.jpeg"
 
 const events = [
-    { id: 2,pic:MinistersTraining, },
+    { id: 2,pic:MinistersTrainingr, },
     { id: 1,pic:eImg1, title: 'PRAYER & BREAKTHROUGH BREAKFAST', convener:"with: PASTOR SADE KUKU",description: 'For such a time as this...Esther 4:14', date: 'Date: 2024-08-24', time:"Time: 10AM", venue:"Venue: 1, OPA ARO CLOSE, OFF TUNJI ADEBAYO STREET, BESIDE AP FILLING STATION, FAGBA LAGOS." },
     // { id: 2,pic:eImg1, title: 'PRAYER & BREAKTHROUGH BREAKFAST2', convener:"PASTOR SADE KUKU",description: 'For such a time as this...Esther 4:14', date: '2024-08-24', time:"10AM", venue:"1, OPA ARO CLOSE, OFF TUNJI ADEBAYO STREET, BESIDE AP FILLING STATION, FAGBA LAGOS." },
   
