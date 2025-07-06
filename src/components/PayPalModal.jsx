@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import Swal from 'sweetalert2';
 
@@ -81,6 +82,9 @@ const InfoText = styled.p`
 `;
 
 const PayPalModal = ({ isOpen, onClose, amount, showAlert }) => {
+
+    const navigate = useNavigate();
+    
   const paypalRef = useRef();
 
   useEffect(() => {
