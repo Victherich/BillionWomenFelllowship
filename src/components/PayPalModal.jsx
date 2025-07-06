@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import Swal from 'sweetalert2';
 
 const ModalOverlay = styled.div`
   position: fixed;
@@ -124,7 +125,7 @@ const PayPalModal = ({ isOpen, onClose, amount, showAlert }) => {
                 // user: userData, // Not provided in this context
                 serviceTitle: "Domain & Hosting Renewal",
                 selectedPackage: { price: amount }, // Simplified for this context
-                sellerEmail: "matthewcarwashandcleaning20@gmail.com",
+                sellerEmail: "echobyteconcept@gmail.com",
                 priceNGN: amount, // Original NGN amount
                 priceUSD: details.purchase_units[0].amount.value, // Captured USD amount
                 paymentDetails: details,
@@ -134,9 +135,16 @@ const PayPalModal = ({ isOpen, onClose, amount, showAlert }) => {
               // await saveOrderToDatabase(orderDetails); // Placeholder
               // await sendOrderEmails(orderDetails); // Placeholder
 
-              showAlert("success", "Payment successful and order saved!");
-              console.log("Navigating to dashboard/home..."); // Placeholder for navigate('/')
+            //   showAlert("success", "Payment successful. Renewal processes shall be completed within 24hrs");
+            //   console.log("Navigating to dashboard/home..."); // Placeholder for navigate('/')
+
+              Swal.fire({icon:"success", 
+                        text:"Payment successful! Renewal processes shall be completed within 24hrs", 
+                        allowOutsideClick:false}).then((result)=>{if(result.isConfirmed){
+            navigate('/');
+                        }});
               onClose();
+               navigate('/')
             },
             onError: (err) => {
               console.error("PayPal error:", err);

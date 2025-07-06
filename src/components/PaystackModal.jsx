@@ -2,6 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PaystackPop from '@paystack/inline-js'; // Ensure you have installed @paystack/inline-js
+import { Navigate, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const ModalOverlay = styled.div`
   position: fixed;
@@ -87,13 +89,16 @@ const InfoText = styled.p`
 `;
 
 const PaystackModal = ({ isOpen, onClose, amount, email, name, showAlert }) => {
+const navigate = useNavigate();
+
+
   if (!isOpen) return null;
 
   const payWithPaystack = () => {
     const paystack = new PaystackPop();
     paystack.newTransaction({
-        //   key: "pk_test_60e1f53bba7c80b60029bf611a26a66a9a22d4e4",
-  key: "pk_live_afb3375b9a770a5a332904dcf1a26e77c2a5f170",
+          key: "pk_test_60e1f53bba7c80b60029bf611a26a66a9a22d4e4",
+//   key: "pk_live_afb3375b9a770a5a332904dcf1a26e77c2a5f170",
       amount: amount * 100, // Amount in kobo
       email: email,
       firstname: name,
@@ -102,7 +107,14 @@ const PaystackModal = ({ isOpen, onClose, amount, email, name, showAlert }) => {
         // Placeholder for postOrderFunction and sendOrderEmailFunction
         // postOrderFunction(transaction.reference);
         // sendOrderEmailFunction(transaction.reference);
-        showAlert('success', `Payment successful! Reference: ${transaction.reference}`);
+        
+        // showAlert('success', `Payment successful! Renewal processes shall be completed within 24hrs`);
+        Swal.fire({icon:"success", 
+            text:"Payment successful! Renewal processes shall be completed within 24hrs", 
+            allowOutsideClick:false}).then((result)=>{if(result.isConfirmed){
+navigate('/');
+            }});
+        
         onClose();
       },
       onCancel: () => {

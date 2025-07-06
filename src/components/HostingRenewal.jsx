@@ -155,7 +155,7 @@ const ProceedButton = styled.button`
 `;
 
 function HostingRenewal() {
-  const hostingAmount = 30000; // NGN
+  const hostingAmount = 50000; // NGN
   const domainAmount = 30000;   // NGN
   const totalAmount = hostingAmount + domainAmount;
 
@@ -194,13 +194,15 @@ function HostingRenewal() {
       <Container>
         <Title>Domain and Hosting Renewal</Title>
 
+        <p>Current Domain and hosting Expiry Date : 21/7/2025</p>
+
         <SectionTitle>Renewal Details</SectionTitle>
         <Item>
           <ItemName>Standard Hosting</ItemName>
           <ItemAmount>₦{hostingAmount.toLocaleString()}</ItemAmount>
         </Item>
         <Item>
-          <ItemName>Domain Name (billionwomwnfellowship.com)</ItemName>
+          <ItemName>Domain Name (billionwomenfellowship.com)</ItemName>
           <ItemAmount>₦{domainAmount.toLocaleString()}</ItemAmount>
         </Item>
 
