@@ -202,7 +202,7 @@ function HostingRenewal() {
           <ItemAmount>₦{hostingAmount.toLocaleString()}</ItemAmount>
         </Item>
         <Item>
-          <ItemName>Domain Name (billionwomenfellowship.com)</ItemName>
+          <ItemName>Domain Name (billionwomenglobal.com)</ItemName>
           <ItemAmount>₦{domainAmount.toLocaleString()}</ItemAmount>
         </Item>
 

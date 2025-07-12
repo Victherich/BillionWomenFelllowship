@@ -31,7 +31,7 @@ const App = () => {
             <Route path="/about" element={<About/>}/>
             <Route path="/eventspage" element={<EventsPage/>}/>
             <Route path="/booking" element={<ContactForm2/>}/>
-            <Route path='/hostingrenewal' element = {<HostingRenewal/>}/>
+            <Route path='/hostingrenewalandreg' element = {<HostingRenewal/>}/>
         </Routes>
         <a ><img src={wp} alt="logo" className="WhatsAppIcon" onClick={()=>window.open("https://wa.me/17703102914","_blank")}/></a>
     <Footer/>    
