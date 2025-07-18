@@ -14,6 +14,7 @@ import A1 from "../videos/video1.mp4"
 import A2 from "../videos/video2.mp4"
 import A3 from "../videos/video3.mp4"
 import A4 from "../videos/video4.mp4"
+import VideoGallery from './VideoGallery'
 
 const LandingPage = () => {
   return (
@@ -28,6 +29,7 @@ const LandingPage = () => {
       <GetInspired/>
       <Video video={A4}/>
       <TestimoniesComponent/>
+      <VideoGallery/>
       <NewsletterSubscription/>
       <Galleries/>
       <GetInvolved/>
