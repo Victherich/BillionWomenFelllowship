@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='CopyRight'><p>© Copyright {new Date().getFullYear()} Billion Women Global Fellowship. All Rights Reserved</p>
-        <p style={{fontSize:"0.7rem",color:"rgba(255,255,255,0.6)"}}><span style={{color:"rgba(0,100,255,0.7)"}}>POWERED BY</span> DIGITAL PREMIUM TECH</p>
+        <p style={{fontSize:"0.7rem",color:"rgba(255,255,255,0.6)"}}><span style={{color:"rgba(0,100,255,0.7)"}}>POWERED BY</span> ECHOBYTE CONCEPT</p>
       </div>
       
 
