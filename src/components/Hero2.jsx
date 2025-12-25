@@ -131,7 +131,7 @@
 import React, { useContext, useRef } from "react";
 import styled from "styled-components";
 import heroVideo from "../videos/video1.mp4";
-import heroPoster from "../images/blogpic5.png";
+import heroPoster from "../images/heropic2.jpeg";
 import { Fade, Slide, Zoom, Flip } from "react-awesome-reveal"; // Import all animation components
 import { Context } from "./Context";
 
@@ -153,6 +153,7 @@ const HeroContainer = styled.section`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position:top;
   }
 `;
 
