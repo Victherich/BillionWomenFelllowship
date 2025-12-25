@@ -20,6 +20,7 @@ const App = () => {
   return (
     <BrowserRouter>
     <ScrollToTop/>
+    
     <Header/>
         <Routes>
             <Route path="/" element={<LandingPage/>}/>

@@ -15,13 +15,15 @@ import A2 from "../videos/video2.mp4"
 import A3 from "../videos/video3.mp4"
 import A4 from "../videos/video4.mp4"
 import VideoGallery from './VideoGallery'
+import Hero2 from './Hero2'
 
 const LandingPage = () => {
   return (
     <div>
-      <Hero/>
+      {/* <Hero/> */}
+      <Hero2/>
       <Intro/>
-      <Video video={A1}/>
+      {/* <Video video={A1}/> */}
       <FounderMessage/>
       <Video video={A2}/>
       <UpcomingEventsComponent/>
@@ -30,7 +32,7 @@ const LandingPage = () => {
       <Video video={A4}/>
       <TestimoniesComponent/>
       <VideoGallery/>
-      <NewsletterSubscription/>
+      {/* <NewsletterSubscription/> */}
       <Galleries/>
       <GetInvolved/>
       <Faq/>
