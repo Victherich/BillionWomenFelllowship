@@ -277,7 +277,7 @@ const Header = () => {
       <Nav>
         <NavLink onClick={() => go('/')} className={isActive('/') ? 'active' : ''}>Home</NavLink>
         <NavLink onClick={() => go('/about')} className={isActive('/about') ? 'active' : ''}>About</NavLink>
-        <NavLink onClick={() => go('/eventspage')} className={isActive('/eventspage') ? 'active' : ''}>Events</NavLink>
+        {/* <NavLink onClick={() => go('/eventspage')} className={isActive('/eventspage') ? 'active' : ''}>Events</NavLink> */}
         <NavLink onClick={() => go('/testimoniespage')} className={isActive('/testimoniespage') ? 'active' : ''}>Testimonies</NavLink>
         <NavLink onClick={() => go('/getinspiredpage')} className={isActive('/getinspiredpage') ? 'active' : ''}>Get Inspired</NavLink>
         <NavLink onClick={() => go('/galleriespage')} className={isActive('/galleriespage') ? 'active' : ''}>Gallery</NavLink>
@@ -294,7 +294,7 @@ const Header = () => {
       <MobileMenu isOpen={open} ref={menuRef}>
         <NavLinkMobile onClick={() => go('/')} className={isActive('/') ? 'active' : ''}>Home</NavLinkMobile>
         <NavLinkMobile onClick={() => go('/about')} className={isActive('/about') ? 'active' : ''}>About</NavLinkMobile>
-        <NavLinkMobile onClick={() => go('/eventspage')} className={isActive('/eventspage') ? 'active' : ''}>Events</NavLinkMobile>
+        {/* <NavLinkMobile onClick={() => go('/eventspage')} className={isActive('/eventspage') ? 'active' : ''}>Events</NavLinkMobile> */}
         <NavLinkMobile onClick={() => go('/testimoniespage')} className={isActive('/testimoniespage') ? 'active' : ''}>Testimonies</NavLinkMobile>
         <NavLinkMobile onClick={() => go('/getinspiredpage')} className={isActive('/getinspiredpage') ? 'active' : ''}>Get Inspired</NavLinkMobile>
         <NavLinkMobile onClick={() => go('/galleriespage')} className={isActive('/galleriespage') ? 'active' : ''}>Gallery</NavLinkMobile>

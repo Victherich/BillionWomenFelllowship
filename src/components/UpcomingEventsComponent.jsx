@@ -98,6 +98,7 @@ import 'react-multi-carousel/lib/styles.css';
 import { FaShareAlt } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import MinistersTraining from '../images/p1.jpeg';
+import FL2026 from '../images/FL2026.jpeg'
 
 /* ================= EVENT DATA ================= */
 
@@ -136,6 +137,43 @@ const events = [
       '1, Opa Aro Close, Off Tunji Adebayo Street, Beside AP Filling Station, Fagba, Lagos.',
   },
 ];
+
+const events2 = [
+  {
+    id: 1,
+    pic: FL2026,
+    title: 'For Such a Time as This',
+    convener: 'Pastor Sade Kuku',
+    description: 'Esther 4:14',
+    date: '24 August 2024',
+    time: '10:00 AM',
+    venue:
+      '1, Opa Aro Close, Off Tunji Adebayo Street, Beside AP Filling Station, Fagba, Lagos.',
+  },
+  {
+    id: 2,
+    pic: FL2026,
+    title: 'For Such a Time as This',
+    convener: 'Pastor Sade Kuku',
+    description: 'Esther 4:14',
+    date: '24 August 2024',
+    time: '10:00 AM',
+    venue:
+      '1, Opa Aro Close, Off Tunji Adebayo Street, Beside AP Filling Station, Fagba, Lagos.',
+  },
+  {
+    id: 3,
+    pic: FL2026,
+    title: 'For Such a Time as This',
+    convener: 'Pastor Sade Kuku',
+    description: 'Esther 4:14',
+    date: '24 August 2024',
+    time: '10:00 AM',
+    venue:
+      '1, Opa Aro Close, Off Tunji Adebayo Street, Beside AP Filling Station, Fagba, Lagos.',
+  },
+];
+
 
 /* ================= STYLED COMPONENTS ================= */
 
@@ -270,6 +308,7 @@ const ViewMoreButton = styled.button`
 
 const UpcomingEventsComponent = () => {
   const navigate = useNavigate();
+  const show = false;
 
   const responsive = {
     desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
@@ -305,7 +344,39 @@ ${window.location.origin}/eventspage
     <Section>
       <Title>Our Events</Title>
 
+      
       <Carousel
+        responsive={responsive}
+        infinite
+        autoPlay
+        autoPlaySpeed={5000}
+        keyBoardControl
+      >
+        {events2.map((event) => (
+          <EventCard key={event.id}>
+            <Image src={event.pic} alt={event.title} />
+
+            <Content>
+              <EventTitle>Register Now</EventTitle>
+              <Convener 
+              onClick={()=>window.open('https://forms.gle/ELRweeJpWGCAXyvw5','_blank')}
+              style={{cursor:"pointer", color:"blue", textDecoration:"underline"}}>https://forms.gle/ELRweeJpWGCAXyvw5</Convener>
+              {/* <Description>{event.description}</Description> */}
+
+              {/* <Meta><strong>Date:</strong> {event.date}</Meta> */}
+              {/* <Meta><strong>Time:</strong> {event.time}</Meta> */}
+              {/* <Meta><strong>Venue:</strong> {event.venue}</Meta> */}
+
+              {/* <ShareButton onClick={() => handleShare(event)}>
+                <FaShareAlt /> Share
+              </ShareButton> */}
+            </Content>
+          </EventCard>
+        ))}
+      </Carousel>
+
+
+     {show && <Carousel
         responsive={responsive}
         infinite
         autoPlay
@@ -332,12 +403,12 @@ ${window.location.origin}/eventspage
           </EventCard>
         ))}
       </Carousel>
-
-      <BottomButtonWrap>
+}
+      {/* <BottomButtonWrap>
         <ViewMoreButton onClick={() => navigate('/eventspage')}>
           See More Events
         </ViewMoreButton>
-      </BottomButtonWrap>
+      </BottomButtonWrap> */}
     </Section>
   );
 };

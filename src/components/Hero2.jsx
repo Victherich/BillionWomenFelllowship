@@ -225,7 +225,7 @@ const Hero2 = () => {
 
   const {state} = useContext(Context);
 
-  console.log(state)
+  // console.log(state)
 
   return (
     <HeroContainer ref={heroRef}>
