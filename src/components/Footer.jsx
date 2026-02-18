@@ -107,7 +107,7 @@ import {
   FaTiktok,
   FaYoutube,
 } from 'react-icons/fa';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 /* ================= STYLED COMPONENTS ================= */
 
@@ -232,7 +232,7 @@ const CopyRight = styled.div`
 
 const Footer = () => {
   const navigate = useNavigate();
-  const location = useLocation();
+
 
   return (
     <FooterWrap>

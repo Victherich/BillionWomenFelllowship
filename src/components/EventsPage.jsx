@@ -90,8 +90,8 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { FaShareAlt } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+// import { FaShareAlt } from 'react-icons/fa';
+
 import BackButton from './BackButton';
 import eImg1 from '../images/eImg1.jpeg';
 import MinistersTrainingr from '../images/MinistersTraining.jpeg';
@@ -186,91 +186,91 @@ const ImageWrap = styled.div`
   }
 `;
 
-const Content = styled.div`
-  padding: 30px;
-  text-align: center;
-`;
+// const Content = styled.div`
+//   padding: 30px;
+//   text-align: center;
+// `;
 
-const EventTitle = styled.h3`
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #4a148c;
-  margin-bottom: 8px;
-`;
+// const EventTitle = styled.h3`
+//   font-size: 1.25rem;
+//   font-weight: 700;
+//   color: #4a148c;
+//   margin-bottom: 8px;
+// `;
 
-const Convener = styled.p`
-  font-weight: 600;
-  color: rgba(255, 0, 43, 0.9);
-  margin-bottom: 16px;
-`;
+// const Convener = styled.p`
+//   font-weight: 600;
+//   color: rgba(255, 0, 43, 0.9);
+//   margin-bottom: 16px;
+// `;
 
-const Text = styled.p`
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 10px;
-`;
+// const Text = styled.p`
+//   font-size: 0.95rem;
+//   color: #555;
+//   line-height: 1.6;
+//   margin-bottom: 10px;
+// `;
 
-const Meta = styled.p`
-  font-size: 0.9rem;
-  color: #444;
-  margin-bottom: 6px;
-`;
+// const Meta = styled.p`
+//   font-size: 0.9rem;
+//   color: #444;
+//   margin-bottom: 6px;
+// `;
 
-const ShareButton = styled.button`
-  margin-top: 18px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 0, 43, 0.9),
-    #4a148c
-  );
-  border: none;
-  color: white;
-  padding: 10px 22px;
-  border-radius: 25px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 25px rgba(255, 0, 43, 0.3);
+// const ShareButton = styled.button`
+//   margin-top: 18px;
+//   background: linear-gradient(
+//     135deg,
+//     rgba(255, 0, 43, 0.9),
+//     #4a148c
+//   );
+//   border: none;
+//   color: white;
+//   padding: 10px 22px;
+//   border-radius: 25px;
+//   font-size: 0.9rem;
+//   font-weight: 600;
+//   cursor: pointer;
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 8px;
+//   transition: all 0.3s ease;
+//   box-shadow: 0 10px 25px rgba(255, 0, 43, 0.3);
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 16px 35px rgba(255, 0, 43, 0.4);
-  }
-`;
+//   &:hover {
+//     transform: translateY(-2px);
+//     box-shadow: 0 16px 35px rgba(255, 0, 43, 0.4);
+//   }
+// `;
 
 /* ================= COMPONENT ================= */
 
 const EventsPage = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleShare = (event) => {
-    const shareText = `
-${event.title}
-${event.description}
+//   const handleShare = (event) => {
+//     const shareText = `
+// ${event.title}
+// ${event.description}
 
-${event.date}
-${event.time}
-${event.venue}
+// ${event.date}
+// ${event.time}
+// ${event.venue}
 
-${window.location.origin}/eventspage
-`;
+// ${window.location.origin}/eventspage
+// `;
 
-    if (navigator.share) {
-      navigator.share({
-        title: event.title,
-        text: shareText,
-        url: window.location.origin + '/eventspage',
-      });
-    } else {
-      navigator.clipboard.writeText(shareText);
-      alert('Event details copied to clipboard');
-    }
-  };
+//     if (navigator.share) {
+//       navigator.share({
+//         title: event.title,
+//         text: shareText,
+//         url: window.location.origin + '/eventspage',
+//       });
+//     } else {
+//       navigator.clipboard.writeText(shareText);
+//       alert('Event details copied to clipboard');
+//     }
+//   };
 
   return (
     <Section>

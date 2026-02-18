@@ -128,12 +128,12 @@
 
 
 
-import React, { useContext, useRef } from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import heroVideo from "../videos/video1.mp4";
 import heroPoster from "../images/heropic2.jpeg";
-import { Fade, Slide, Zoom, Flip } from "react-awesome-reveal"; // Import all animation components
-import { Context } from "./Context";
+import {  Zoom, Flip } from "react-awesome-reveal"; // Import all animation components
+
 
 // Styled Components
 const HeroContainer = styled.section`
@@ -223,7 +223,7 @@ const HeroSubtitle = styled.p`
 const Hero2 = () => {
   const heroRef = useRef(null);
 
-  const {state} = useContext(Context);
+
 
   // console.log(state)
 

@@ -261,7 +261,7 @@ const ErrorText = styled.p`
 /* ================= COMPONENT ================= */
 
 const GetInvolved = () => {
-  const [state, handleSubmit] = useForm('mgvwogoo');
+  const [ handleSubmit] = useForm('mgvwogoo');
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

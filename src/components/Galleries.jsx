@@ -150,12 +150,12 @@ const ImageWrap = styled.div`
   }
 `;
 
-const Caption = styled.p`
-  padding: 16px 18px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #4a148c;
-`;
+// const Caption = styled.p`
+//   padding: 16px 18px;
+//   font-size: 0.95rem;
+//   font-weight: 600;
+//   color: #4a148c;
+// `;
 
 const ButtonWrap = styled.div`
   margin-top: 50px;

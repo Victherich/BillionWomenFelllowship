@@ -4,9 +4,9 @@ import { FaHome } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { css } from '@emotion/react';
 import ClipLoader from 'react-spinners/ClipLoader';
-import Logo from "../images/logo.jpeg";
+
 import { useForm } from '@formspree/react';
-import BackButton from './BackButton';
+
 
 const ContactForm2 = () => {
   const [state, handleSubmit] = useForm("mjkbrrgz");

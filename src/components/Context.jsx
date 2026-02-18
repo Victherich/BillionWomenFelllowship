@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { createContext } from 'react'
 import blogpic1 from "../images/blogpic1.png"
 import blogpic2 from "../images/blogpic2.png"
@@ -12,8 +12,7 @@ import blogpic8 from "../images/blogpic8.png"
 export const Context = createContext()
 
 const ContextProvider = ({children}) => {
-const [state,setState]=useState(false)
-const check = ''
+
 
 
 const blogs = [
@@ -150,7 +149,7 @@ const blogs = [
 
 
   return (
-    <Context.Provider value={{state,blogs}}>
+    <Context.Provider value={{blogs}}>
       {children}
     </Context.Provider>
   )

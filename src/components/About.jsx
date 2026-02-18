@@ -3,13 +3,13 @@ import "../CSS/AboutUs.css"
 import { useState } from 'react';
 import Founder from "../images/FounderBWGF.jpeg"
 import s3 from '../images/gpic8.jpeg'
-import { useNavigate } from 'react-router-dom';
+
 import BackButton from './BackButton';
 
 
 
 const About = () => {
-  const navigate=useNavigate()
+
 
   const [showDescription, setShowDescription] = useState(false);
 
@@ -28,6 +28,7 @@ const About = () => {
     <div className='AboutUsWrap'>
         <div className='AboutUsHeaderWrap'>
             <h1>About Us</h1>
+            {showDescription&&<p></p>}
         </div>
         <div className="about-us">
       <div className='WhoWeAreAndDoWrap'>

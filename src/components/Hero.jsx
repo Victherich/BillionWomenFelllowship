@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import HeroPic1 from "../images/heropic1.png";
 import HeroPic2 from "../images/heropic22.png";
 import HeroPic3 from "../images/heropic3.png";
-import HeroPic4 from "../images/heropic4.png"
+
 import "../CSS/Hero.css";
 
 const Hero = () => {
@@ -28,9 +28,7 @@ const Hero = () => {
         <div>
           <img src={HeroPic3} alt="HeroPic3" />
         </div>
-        {/* <div>
-          <img src={HeroPic4} alt="HeroPic4" />
-        </div> */}
+    
         
       </Carousel>
       <h1>BILLION WOMEN<br/> GLOBAL<br/> FELLOWSHIP (BWGF)</h1>
