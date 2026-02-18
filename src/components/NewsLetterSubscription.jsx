@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import '../CSS/NewsLetterSubscription.css';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm} from '@formspree/react';
 import { css } from '@emotion/react';
 import ClipLoader from 'react-spinners/ClipLoader';
 import Swal from 'sweetalert2';
 
 const NewsletterSubscription = () => {
-    const [state, handleSubmit] = useForm("mblrdnak");
+    const [ handleSubmit] = useForm("mblrdnak");
     const [submitting, setSubmitting] = useState(false);
-    const [error, setError] = useState(null);
+    // const [error, setError] = useState(null);
     const [email, setEmail] = useState('');
 
     const handleSubmitForm = (e) => {
@@ -29,7 +29,7 @@ const NewsletterSubscription = () => {
           })
           .catch((err) => {
             setSubmitting(false);
-            setError("An error occurred. Please try again later.");
+            // setError("An error occurred. Please try again later.");
           });
       };
     

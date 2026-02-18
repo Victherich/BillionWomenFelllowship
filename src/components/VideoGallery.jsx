@@ -161,23 +161,6 @@ const StyledVideo = styled.video`
 `;
 
 /* Optional overlay if needed later */
-const OverlayText = styled.div`
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.35);
-  color: white;
-  font-size: 1rem;
-  font-style: italic;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-
-  ${VideoBox}:hover & {
-    opacity: 1;
-  }
-`;
 
 /* ================= COMPONENT ================= */
 

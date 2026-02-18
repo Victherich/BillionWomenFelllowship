@@ -96,7 +96,7 @@ import styled from 'styled-components';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { FaShareAlt } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+
 import MinistersTraining from '../images/p1.jpeg';
 import FL2026 from '../images/FL2026.jpeg'
 
@@ -245,17 +245,17 @@ const Convener = styled.p`
   margin-bottom: 10px;
 `;
 
-const Description = styled.p`
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 20px;
-`;
+// const Description = styled.p`
+//   font-size: 0.95rem;
+//   color: #555;
+//   margin-bottom: 20px;
+// `;
 
-const Meta = styled.p`
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 5px;
-`;
+// const Meta = styled.p`
+//   font-size: 0.9rem;
+//   color: #666;
+//   margin-bottom: 5px;
+// `;
 
 const ShareButton = styled.button`
   margin-top: 20px;
@@ -281,33 +281,33 @@ const ShareButton = styled.button`
   }
 `;
 
-const BottomButtonWrap = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-`;
+// const BottomButtonWrap = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 60px;
+// `;
 
-const ViewMoreButton = styled.button`
-  background: transparent;
-  border: 2px solid rgba(255, 0, 43, 0.8);
-  color: rgba(255, 0, 43, 0.9);
-  padding: 14px 40px;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.35s ease;
+// const ViewMoreButton = styled.button`
+//   background: transparent;
+//   border: 2px solid rgba(255, 0, 43, 0.8);
+//   color: rgba(255, 0, 43, 0.9);
+//   padding: 14px 40px;
+//   border-radius: 30px;
+//   font-size: 1rem;
+//   font-weight: 600;
+//   cursor: pointer;
+//   transition: all 0.35s ease;
 
-  &:hover {
-    background: rgba(255, 0, 43, 0.9);
-    color: white;
-  }
-`;
+//   &:hover {
+//     background: rgba(255, 0, 43, 0.9);
+//     color: white;
+//   }
+// `;
 
 /* ================= COMPONENT ================= */
 
 const UpcomingEventsComponent = () => {
-  const navigate = useNavigate();
+
   const show = false;
 
   const responsive = {

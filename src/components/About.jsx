@@ -14,15 +14,15 @@ const About = () => {
   const [showDescription, setShowDescription] = useState(false);
 
   // Function to toggle description visibility
-  const toggleDescription = () => {
-    setShowDescription(!showDescription);
-  };
+  // const toggleDescription = () => {
+  //   setShowDescription(!showDescription);
+  // };
 
-  const handleNavigate= ()=>{
-    navigate('/contactus')
-  }
+  // const handleNavigate= ()=>{
+  //   navigate('/contactus')
+  // }
 
-  const [showMore,setShowMore]=useState(false)
+  // const [showMore,setShowMore]=useState(false)
 
   return (
     <div className='AboutUsWrap'>
