@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PaystackPop from '@paystack/inline-js'; // Ensure you have installed @paystack/inline-js
-// import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const ModalOverlay = styled.div`
@@ -89,7 +89,7 @@ const InfoText = styled.p`
 `;
 
 const PaystackModal = ({ isOpen, onClose, amount, email, name, showAlert }) => {
-// const navigate = useNavigate();
+const navigate = useNavigate();
 
 
   if (!isOpen) return null;
