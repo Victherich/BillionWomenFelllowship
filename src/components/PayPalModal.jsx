@@ -125,16 +125,16 @@ const PayPalModal = ({ isOpen, onClose, amount, showAlert }) => {
               console.log("PayPal transaction successful:", details);
 
               // Placeholder for order details and database/email functions
-              const orderDetails = {
-                // user: userData, // Not provided in this context
-                serviceTitle: "Domain & Hosting Renewal",
-                selectedPackage: { price: amount }, // Simplified for this context
-                sellerEmail: "echobyteconcept@gmail.com",
-                priceNGN: amount, // Original NGN amount
-                priceUSD: details.purchase_units[0].amount.value, // Captured USD amount
-                paymentDetails: details,
-                date: new Date().toISOString(),
-              };
+              // const orderDetails = {
+              //   // user: userData, // Not provided in this context
+              //   serviceTitle: "Domain & Hosting Renewal",
+              //   selectedPackage: { price: amount }, // Simplified for this context
+              //   sellerEmail: "echobyteconcept@gmail.com",
+              //   priceNGN: amount, // Original NGN amount
+              //   priceUSD: details.purchase_units[0].amount.value, // Captured USD amount
+              //   paymentDetails: details,
+              //   date: new Date().toISOString(),
+              // };
 
               // await saveOrderToDatabase(orderDetails); // Placeholder
               // await sendOrderEmails(orderDetails); // Placeholder
@@ -165,7 +165,7 @@ const PayPalModal = ({ isOpen, onClose, amount, showAlert }) => {
         document.body.removeChild(script);
       };
     }
-  }, [isOpen, amount, showAlert, onClose]); // Add onClose to dependency array
+  }, [isOpen, amount, showAlert, onClose,navigate]); // Add onClose to dependency array
 
   if (!isOpen) return null;
 
